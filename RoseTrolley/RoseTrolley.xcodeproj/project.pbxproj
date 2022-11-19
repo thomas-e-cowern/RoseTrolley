@@ -11,6 +11,7 @@
 		4D2E446329295CB300E8E173 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E446229295CB300E8E173 /* ContentView.swift */; };
 		4D2E446529295CB500E8E173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2E446429295CB500E8E173 /* Assets.xcassets */; };
 		4D2E446829295CB500E8E173 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2E446729295CB500E8E173 /* Preview Assets.xcassets */; };
+		4D2E447029295F1500E8E173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D2E446F29295F1500E8E173 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4D2E446229295CB300E8E173 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D2E446429295CB500E8E173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2E446729295CB500E8E173 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D2E446F29295F1500E8E173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				4D2E446029295CB300E8E173 /* RoseTrolleyApp.swift */,
 				4D2E446229295CB300E8E173 /* ContentView.swift */,
+				4D2E446F29295F1500E8E173 /* GoogleService-Info.plist */,
 				4D2E446429295CB500E8E173 /* Assets.xcassets */,
 				4D2E446629295CB500E8E173 /* Preview Content */,
 			);
@@ -127,6 +130,7 @@
 			files = (
 				4D2E446829295CB500E8E173 /* Preview Assets.xcassets in Resources */,
 				4D2E446529295CB500E8E173 /* Assets.xcassets in Resources */,
+				4D2E447029295F1500E8E173 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
