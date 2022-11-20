@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State private var path: [Bool] = []
+    @State var isActive: Bool = false
+    
     var body: some View {
-        VStack {
-            Image("rose-trolley-logo")
-            Spacer()
-                .frame(height: 150)
-            Button("Find a Ride") {
-                // Hail a ride coming...
-            }.buttonStyle(RoseButtonStyle())
+        NavigationStack(path: $path) {
+            VStack {
+                Image("rose-trolley-logo")
+                Spacer()
+                    .frame(height: 150)
+                Button("Find a Ride") {
+                    // Hail a ride coming...
+                    isActive = true
+                                                
+                    if isActive {
+                        path.append(isActive)
+                    }
+                }.buttonStyle(RoseButtonStyle())
+            }
+            .navigationDestination(for: Bool.self, destination: { value in
+                SignUpView()
+            })
         }
     }
 }

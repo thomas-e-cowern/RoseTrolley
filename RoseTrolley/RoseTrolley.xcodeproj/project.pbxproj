@@ -49,6 +49,10 @@
 		4D2E44BE29298AD700E8E173 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44BD29298AD700E8E173 /* LoginView.swift */; };
 		4D2E44C12929A2B000E8E173 /* RoseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C02929A2B000E8E173 /* RoseButtonStyle.swift */; };
 		4D2E44C32929A3B500E8E173 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C22929A3B500E8E173 /* SignUpView.swift */; };
+		4D2E44C52929AA3400E8E173 /* PassengersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C42929AA3400E8E173 /* PassengersView.swift */; };
+		4D2E44C72929B07A00E8E173 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C62929B07A00E8E173 /* MainView.swift */; };
+		4D2E44CA2929B0A800E8E173 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C92929B0A800E8E173 /* ViewRouter.swift */; };
+		4D2E44CD2929B10400E8E173 /* RideViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44CC2929B10400E8E173 /* RideViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +72,10 @@
 		4D2E44BD29298AD700E8E173 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D2E44C02929A2B000E8E173 /* RoseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoseButtonStyle.swift; sourceTree = "<group>"; };
 		4D2E44C22929A3B500E8E173 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4D2E44C42929AA3400E8E173 /* PassengersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersView.swift; sourceTree = "<group>"; };
+		4D2E44C62929B07A00E8E173 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4D2E44C92929B0A800E8E173 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		4D2E44CC2929B10400E8E173 /* RideViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,8 @@
 		4D2E445F29295CB300E8E173 /* RoseTrolley */ = {
 			isa = PBXGroup;
 			children = (
+				4D2E44CB2929B0E500E8E173 /* Utilities */,
+				4D2E44C82929B09200E8E173 /* Routers */,
 				4D2E44BF2929A20400E8E173 /* Styling */,
 				4D2E44BC29298AC000E8E173 /* Views */,
 				4D2E446029295CB300E8E173 /* RoseTrolleyApp.swift */,
@@ -158,6 +168,8 @@
 			children = (
 				4D2E44BD29298AD700E8E173 /* LoginView.swift */,
 				4D2E44C22929A3B500E8E173 /* SignUpView.swift */,
+				4D2E44C42929AA3400E8E173 /* PassengersView.swift */,
+				4D2E44C62929B07A00E8E173 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +180,22 @@
 				4D2E44C02929A2B000E8E173 /* RoseButtonStyle.swift */,
 			);
 			path = Styling;
+			sourceTree = "<group>";
+		};
+		4D2E44C82929B09200E8E173 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				4D2E44C92929B0A800E8E173 /* ViewRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		4D2E44CB2929B0E500E8E173 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4D2E44CC2929B10400E8E173 /* RideViews.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,15 +301,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2E44CA2929B0A800E8E173 /* ViewRouter.swift in Sources */,
 				4D2E44B7292973D200E8E173 /* MapView.swift in Sources */,
+				4D2E44C72929B07A00E8E173 /* MainView.swift in Sources */,
 				4D2E44B529296A7A00E8E173 /* addRequestViewModel.swift in Sources */,
 				4D2E44B9292974E800E8E173 /* Location.swift in Sources */,
 				4D2E446329295CB300E8E173 /* ContentView.swift in Sources */,
+				4D2E44C52929AA3400E8E173 /* PassengersView.swift in Sources */,
 				4D2E44C32929A3B500E8E173 /* SignUpView.swift in Sources */,
 				4D2E446129295CB300E8E173 /* RoseTrolleyApp.swift in Sources */,
 				4D2E44AD292962BD00E8E173 /* FirebaseService.swift in Sources */,
 				4D2E447229295F6100E8E173 /* RequestRideView.swift in Sources */,
 				4D2E44C12929A2B000E8E173 /* RoseButtonStyle.swift in Sources */,
+				4D2E44CD2929B10400E8E173 /* RideViews.swift in Sources */,
 				4D2E44B3292963F900E8E173 /* Ride.swift in Sources */,
 				4D2E44BE29298AD700E8E173 /* LoginView.swift in Sources */,
 				4D2E44BB29297CCD00E8E173 /* LocationManager.swift in Sources */,
