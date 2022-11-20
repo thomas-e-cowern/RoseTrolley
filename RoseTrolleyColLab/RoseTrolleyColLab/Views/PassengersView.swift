@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PassengersView: View {
     
+    @Binding var path: NavigationPath
+    
     @State private var numberOfPeople: String = "1"
     
     var body: some View {
@@ -51,6 +53,7 @@ struct PassengersView: View {
                     Spacer()
                     Button("Next") {
                         // Move to next screen
+                        path.append(RoseTrolleyColLabApp.ViewOptions.phoneNumberView)
                     }
                     .buttonStyle(RoseButtonStyle())
                 }
@@ -60,8 +63,8 @@ struct PassengersView: View {
     }
 }
 
-struct PassengersView_Previews: PreviewProvider {
-    static var previews: some View {
-        PassengersView()
-    }
-}
+//struct PassengersView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PassengersView()
+//    }
+//}

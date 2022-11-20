@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RiderMessageView: View {
+    
+    @Binding var path: NavigationPath
+    
     var body: some View {
         ZStack {
             VStack {
@@ -25,6 +28,8 @@ struct RiderMessageView: View {
                     Spacer()
                     Button("View Rides") {
                         // Move to next screen
+                        path = NavigationPath.init()
+                        printPath()
                     }
                     .buttonStyle(RoseButtonStyle())
                 }
@@ -32,10 +37,14 @@ struct RiderMessageView: View {
             }
         }
     }
-}
-
-struct RiderMessageView_Previews: PreviewProvider {
-    static var previews: some View {
-        RiderMessageView()
+    
+    func printPath() {
+        print("Path: \(path)")
     }
 }
+//
+//struct RiderMessageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RiderMessageView()
+//    }
+//}

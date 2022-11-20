@@ -9,6 +9,9 @@ import SwiftUI
 import AuthenticationServices
 
 struct LoginSignupView: View {
+    
+    @Binding var path: NavigationPath
+    
     var body: some View {
         VStack {
             Image("rose-trolley-logo")
@@ -41,6 +44,7 @@ struct LoginSignupView: View {
             
             Button("Sign in wtih Google") {
                 // Sign Up
+                path.append(RoseTrolleyColLabApp.ViewOptions.passengersView)
                 
             }
             .buttonStyle(RoseButtonStyle())
@@ -48,8 +52,8 @@ struct LoginSignupView: View {
     }
 }
 
-struct LoginSignUp_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginSignupView()
-    }
-}
+//struct LoginSignUp_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginSignupView()
+//    }
+//}
