@@ -54,6 +54,7 @@
 		4D2E44CA2929B0A800E8E173 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C92929B0A800E8E173 /* ViewRouter.swift */; };
 		4D2E44CD2929B10400E8E173 /* RideViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44CC2929B10400E8E173 /* RideViews.swift */; };
 		4D2E44CF2929B42100E8E173 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44CE2929B42100E8E173 /* PhoneView.swift */; };
+		4D2E44D12929C34200E8E173 /* MessageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44D02929C34200E8E173 /* MessageVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		4D2E44C92929B0A800E8E173 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		4D2E44CC2929B10400E8E173 /* RideViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideViews.swift; sourceTree = "<group>"; };
 		4D2E44CE2929B42100E8E173 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		4D2E44D02929C34200E8E173 /* MessageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				4D2E44C42929AA3400E8E173 /* PassengersView.swift */,
 				4D2E44C62929B07A00E8E173 /* MainView.swift */,
 				4D2E44CE2929B42100E8E173 /* PhoneView.swift */,
+				4D2E44D02929C34200E8E173 /* MessageVIew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				4D2E44CD2929B10400E8E173 /* RideViews.swift in Sources */,
 				4D2E44B3292963F900E8E173 /* Ride.swift in Sources */,
 				4D2E44BE29298AD700E8E173 /* LoginView.swift in Sources */,
+				4D2E44D12929C34200E8E173 /* MessageVIew.swift in Sources */,
 				4D2E44BB29297CCD00E8E173 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

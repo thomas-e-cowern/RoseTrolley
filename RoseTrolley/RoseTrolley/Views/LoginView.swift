@@ -13,7 +13,7 @@ struct LoginView: View {
     @State var isActive: Bool = false
     
     var body: some View {
-        NavigationStack(path: $path) {
+//        NavigationStack(path: $path) {
             VStack {
                 Image("rose-trolley-logo")
                 Spacer()
@@ -30,7 +30,7 @@ struct LoginView: View {
             .navigationDestination(for: Bool.self, destination: { value in
                 SignUpView()
             })
-        }
+//        }
     }
 }
 

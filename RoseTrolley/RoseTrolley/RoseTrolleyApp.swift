@@ -24,7 +24,9 @@ struct RoseTrolleyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            NavigationStack {
+                LoginView()
+            }
         }
     }
 }

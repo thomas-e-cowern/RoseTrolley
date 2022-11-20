@@ -10,14 +10,17 @@ import SwiftUI
 struct PhoneView: View {
     
     @State private var phone: String = ""
+    @State private var isShowingMessageView = false
     
     var body: some View {
-        ZStack {
-            VStack {
+        NavigationView {
+            ZStack {
                 VStack {
                     TextField("Phone Number", text: $phone)
                         .textFieldStyle(.roundedBorder)
                     Text("Valid Phone Number")
+                        .foregroundColor(Color("ColorMain"))
+                        .font(.headline)
                 }
                 .padding(.trailing, 40)
                 .padding(.leading, 40)
@@ -26,8 +29,10 @@ struct PhoneView: View {
                     Spacer()
                     HStack {
                         Spacer()
+                        NavigationLink(destination: MessageVIew(), isActive: $isShowingMessageView) { EmptyView() }
                         Button("Next") {
                             // Move to next screen
+                            isShowingMessageView = true
                         }
                         .buttonStyle(RoseButtonStyle())
                     }

@@ -47,15 +47,18 @@ struct SignUpView: View {
                 
                 Button("Sign in wtih Google") {
                     // Sign Up
-                    isActive = true
-
+                    
                 }
                 .buttonStyle(RoseButtonStyle())
                 
+                NavigationLink(
+                    value: "I've Navigated",
+                    label: { Text("Test Navigating") }
+                )
             }
-            .navigationDestination(for: Bool.self, destination: { value in
-                PassengersView()
-            })
+            .navigationDestination(for: String.self) {
+                Text($0)
+            }
         }
     }
     
