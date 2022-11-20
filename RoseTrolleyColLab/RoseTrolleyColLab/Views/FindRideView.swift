@@ -9,7 +9,15 @@ import SwiftUI
 
 struct FindRideView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("rose-trolley-logo")
+            Spacer()
+                .frame(height: 100)
+            Button("Find a Ride") {
+                
+            }
+            .buttonStyle(RoseButtonStyle())
+        }
     }
 }
 

@@ -12,7 +12,7 @@ struct RoseButtonStyle: ButtonStyle {
         configuration.label
             .padding(12)
             .frame(width: 200)
-            .background(Color("ColorMain"))
+            .background(Color("Primary"))
             .foregroundColor(.white)
             .cornerRadius(8)
     }
