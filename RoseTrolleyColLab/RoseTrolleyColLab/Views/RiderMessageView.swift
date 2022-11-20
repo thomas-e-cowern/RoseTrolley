@@ -29,7 +29,7 @@ struct RiderMessageView: View {
                     Button("View Rides") {
                         // Move to next screen
                         path = NavigationPath.init()
-                        printPath()
+                        path.append(RoseTrolleyColLabApp.ViewOptions.rideMapView)
                     }
                     .buttonStyle(RoseButtonStyle())
                 }

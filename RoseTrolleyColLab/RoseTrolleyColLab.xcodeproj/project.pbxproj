@@ -17,6 +17,8 @@
 		4D2E4516292A0D5D00E8E173 /* PassengersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E4515292A0D5D00E8E173 /* PassengersView.swift */; };
 		4D2E4518292A110000E8E173 /* PhoneNumberVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E4517292A110000E8E173 /* PhoneNumberVIew.swift */; };
 		4D2E451A292A121A00E8E173 /* RiderMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E4519292A121A00E8E173 /* RiderMessageView.swift */; };
+		4D2E451C292A190F00E8E173 /* RideMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E451B292A190F00E8E173 /* RideMapView.swift */; };
+		4D2E451F292A61FA00E8E173 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E451E292A61FA00E8E173 /* Ride.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		4D2E4515292A0D5D00E8E173 /* PassengersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersView.swift; sourceTree = "<group>"; };
 		4D2E4517292A110000E8E173 /* PhoneNumberVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVIew.swift; sourceTree = "<group>"; };
 		4D2E4519292A121A00E8E173 /* RiderMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderMessageView.swift; sourceTree = "<group>"; };
+		4D2E451B292A190F00E8E173 /* RideMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideMapView.swift; sourceTree = "<group>"; };
+		4D2E451E292A61FA00E8E173 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		4D2E44FD292A08FC00E8E173 /* RoseTrolleyColLab */ = {
 			isa = PBXGroup;
 			children = (
+				4D2E451D292A61C300E8E173 /* Models */,
 				4D2E4510292A0A9500E8E173 /* Styles */,
 				4D2E450D292A09A100E8E173 /* Views */,
 				4D2E44FE292A08FC00E8E173 /* RoseTrolleyColLabApp.swift */,
@@ -89,6 +94,7 @@
 				4D2E4515292A0D5D00E8E173 /* PassengersView.swift */,
 				4D2E4517292A110000E8E173 /* PhoneNumberVIew.swift */,
 				4D2E4519292A121A00E8E173 /* RiderMessageView.swift */,
+				4D2E451B292A190F00E8E173 /* RideMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +105,14 @@
 				4D2E4511292A0AAB00E8E173 /* RoseButtonStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		4D2E451D292A61C300E8E173 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D2E451E292A61FA00E8E173 /* Ride.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,11 +188,13 @@
 				4D2E4501292A08FC00E8E173 /* ContentView.swift in Sources */,
 				4D2E44FF292A08FC00E8E173 /* RoseTrolleyColLabApp.swift in Sources */,
 				4D2E4514292A0C7A00E8E173 /* LoginSignupView.swift in Sources */,
+				4D2E451F292A61FA00E8E173 /* Ride.swift in Sources */,
 				4D2E4512292A0AAB00E8E173 /* RoseButtonStyle.swift in Sources */,
 				4D2E450F292A09B600E8E173 /* FindRideView.swift in Sources */,
 				4D2E4518292A110000E8E173 /* PhoneNumberVIew.swift in Sources */,
 				4D2E4516292A0D5D00E8E173 /* PassengersView.swift in Sources */,
 				4D2E451A292A121A00E8E173 /* RiderMessageView.swift in Sources */,
+				4D2E451C292A190F00E8E173 /* RideMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

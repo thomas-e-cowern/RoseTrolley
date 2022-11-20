@@ -29,6 +29,7 @@ struct RoseTrolleyColLabApp: App {
             case passengersView
             case phoneNumberView
             case riderMessageView
+            case rideMapView
             //Assign each case with a `View`
             @ViewBuilder func view(_ path: Binding<NavigationPath>) -> some View{
                 switch self{
@@ -42,6 +43,8 @@ struct RoseTrolleyColLabApp: App {
                     PhoneNumberVIew(path: path)
                 case .riderMessageView:
                     RiderMessageView(path: path)
+                case .rideMapView:
+                    RideMapView()
                 }
             }
         }
