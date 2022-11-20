@@ -13,6 +13,7 @@
 		4D2E4506292A090100E8E173 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2E4505292A090100E8E173 /* Preview Assets.xcassets */; };
 		4D2E450F292A09B600E8E173 /* FindRideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E450E292A09B600E8E173 /* FindRideView.swift */; };
 		4D2E4512292A0AAB00E8E173 /* RoseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E4511292A0AAB00E8E173 /* RoseButtonStyle.swift */; };
+		4D2E4514292A0C7A00E8E173 /* LoginSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E4513292A0C7A00E8E173 /* LoginSignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4D2E4505292A090100E8E173 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D2E450E292A09B600E8E173 /* FindRideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRideView.swift; sourceTree = "<group>"; };
 		4D2E4511292A0AAB00E8E173 /* RoseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoseButtonStyle.swift; sourceTree = "<group>"; };
+		4D2E4513292A0C7A00E8E173 /* LoginSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4D2E450E292A09B600E8E173 /* FindRideView.swift */,
+				4D2E4513292A0C7A00E8E173 /* LoginSignUp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				4D2E4501292A08FC00E8E173 /* ContentView.swift in Sources */,
 				4D2E44FF292A08FC00E8E173 /* RoseTrolleyColLabApp.swift in Sources */,
+				4D2E4514292A0C7A00E8E173 /* LoginSignUp.swift in Sources */,
 				4D2E4512292A0AAB00E8E173 /* RoseButtonStyle.swift in Sources */,
 				4D2E450F292A09B600E8E173 /* FindRideView.swift in Sources */,
 			);
