@@ -47,6 +47,8 @@
 		4D2E44B9292974E800E8E173 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44B8292974E800E8E173 /* Location.swift */; };
 		4D2E44BB29297CCD00E8E173 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44BA29297CCD00E8E173 /* LocationManager.swift */; };
 		4D2E44BE29298AD700E8E173 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44BD29298AD700E8E173 /* LoginView.swift */; };
+		4D2E44C12929A2B000E8E173 /* RoseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C02929A2B000E8E173 /* RoseButtonStyle.swift */; };
+		4D2E44C32929A3B500E8E173 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E44C22929A3B500E8E173 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		4D2E44B8292974E800E8E173 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4D2E44BA29297CCD00E8E173 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4D2E44BD29298AD700E8E173 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4D2E44C02929A2B000E8E173 /* RoseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoseButtonStyle.swift; sourceTree = "<group>"; };
+		4D2E44C22929A3B500E8E173 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				4D2E44BD29298AD700E8E173 /* LoginView.swift */,
+				4D2E44C22929A3B500E8E173 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 		4D2E44BF2929A20400E8E173 /* Styling */ = {
 			isa = PBXGroup;
 			children = (
+				4D2E44C02929A2B000E8E173 /* RoseButtonStyle.swift */,
 			);
 			path = Styling;
 			sourceTree = "<group>";
@@ -271,9 +277,11 @@
 				4D2E44B529296A7A00E8E173 /* addRequestViewModel.swift in Sources */,
 				4D2E44B9292974E800E8E173 /* Location.swift in Sources */,
 				4D2E446329295CB300E8E173 /* ContentView.swift in Sources */,
+				4D2E44C32929A3B500E8E173 /* SignUpView.swift in Sources */,
 				4D2E446129295CB300E8E173 /* RoseTrolleyApp.swift in Sources */,
 				4D2E44AD292962BD00E8E173 /* FirebaseService.swift in Sources */,
 				4D2E447229295F6100E8E173 /* RequestRideView.swift in Sources */,
+				4D2E44C12929A2B000E8E173 /* RoseButtonStyle.swift in Sources */,
 				4D2E44B3292963F900E8E173 /* Ride.swift in Sources */,
 				4D2E44BE29298AD700E8E173 /* LoginView.swift in Sources */,
 				4D2E44BB29297CCD00E8E173 /* LocationManager.swift in Sources */,

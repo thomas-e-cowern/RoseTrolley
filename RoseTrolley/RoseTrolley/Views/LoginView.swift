@@ -15,7 +15,7 @@ struct LoginView: View {
                 .frame(height: 150)
             Button("Find a Ride") {
                 // Hail a ride coming...
-            }
+            }.buttonStyle(RoseButtonStyle())
         }
     }
 }
