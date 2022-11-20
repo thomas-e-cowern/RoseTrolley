@@ -1,5 +1,5 @@
 //
-//  LoginSignUp.swift
+//  LoginSignupView.swift
 //  RoseTrolleyColLab
 //
 //  Created by Thomas Cowern on 11/20/22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import AuthenticationServices
 
-struct LoginSignUp: View {
+struct LoginSignupView: View {
     var body: some View {
         VStack {
             Image("rose-trolley-logo")
@@ -50,6 +50,6 @@ struct LoginSignUp: View {
 
 struct LoginSignUp_Previews: PreviewProvider {
     static var previews: some View {
-        LoginSignUp()
+        LoginSignupView()
     }
 }
