@@ -40,11 +40,11 @@ struct RoseTrolleyColLabApp: App {
                 case .passengersView:
                     PassengersView(path: path)
                 case .phoneNumberView:
-                    PhoneNumberVIew(path: path)
+                   RideMapView(path: path)
                 case .riderMessageView:
                     RiderMessageView(path: path)
                 case .rideMapView:
-                    RideMapView()
+                    RideMapView(path: path)
                 }
             }
         }

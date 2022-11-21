@@ -10,10 +10,12 @@ import MapKit
 
 struct RideMapView: View {
     
-    let locations: [String] = ["313 Datura street, West Palm Beach, FL 33417", "3123 Main street, West Palm Beach, FL 33417", "3149 James street, West Palm Beach, FL 33417", "391 Clematis street, West Palm Beach, FL 33417", "1202 Fern, West Palm Beach, FL 33417", "456 Beach street, West Palm Beach, FL 33417"]
+    @Binding var path: NavigationPath
+    @Environment(\.dismiss) var dismiss
     
     @State var searchText = ""
-    @State var frameHeight: CGFloat = 300
+    @State var frameHeight: CGFloat = 70
+    @State var isShowing: Bool = false
     
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 26.709723, longitude:  -80.064163), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     
@@ -24,37 +26,22 @@ struct RideMapView: View {
                 ZStack {
                     
                     VStack {
-                        Text("Where can Rose Trolley take you today?")
+                        
                         HStack {
-                            Image(systemName: "magnifyingglass")
-                            TextField("Search ..", text: $searchText)
-                            Button {
+                            Button("Book a Trolley") {
                                 // Book
-                            } label: {
-                                Image("rose")
-                                    .resizable()
-                                    .scaledToFit()
+//                                path.append(RoseTrolleyColLabApp.ViewOptions.riderMessageView)
+                                isShowing = true
                             }
-                            .frame(width: 30, height: 30)
-
                         }
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Primary"))
                         .padding(.leading, 13)
-                        
-                        List {
-                            ForEach(searchResults, id: \.self) { location in
-                                Button {
-                                    
-                                } label: {
-                                    Text(location)
-                                        .foregroundColor(Color("Primary"))
-                                }
-
-                            }
-                        }
-                        .searchable(text: $searchText)
-                        
+                        .frame(width: 200, height: 80)
+                    
                         Spacer()
+                    }
+                    .sheet(isPresented: $isShowing) {
+                        LocationListView(path: $path)
                     }
                 Rectangle()
                     .foregroundColor(Color("LightGray"))
@@ -65,18 +52,10 @@ struct RideMapView: View {
             }
         }
     }
-    
-    var searchResults: [String] {
-        if searchText.isEmpty {
-            return locations
-        } else {
-            return locations.filter { $0.contains(searchText) }
-        }
-    }
 }
-
-struct RideMapView_Previews: PreviewProvider {
-    static var previews: some View {
-        RideMapView()
-    }
-}
+//
+//struct RideMapView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RideMapView()
+//    }
+//}
