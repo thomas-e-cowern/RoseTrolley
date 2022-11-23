@@ -46,7 +46,5 @@ extension UberMapViewRepresentable {
             
             parent.mapView.setRegion(region, animated: true)
         }
-        
-        
     }
 }
