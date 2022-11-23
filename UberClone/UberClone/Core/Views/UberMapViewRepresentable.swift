@@ -10,8 +10,6 @@ import MapKit
 
 struct UberMapViewRepresentable: UIViewRepresentable {
     
-    typealias UIViewType = <#type#>
-    
     let mapView = MKMapView()
     
     func makeUIView(context: Context) -> some UIView {
@@ -20,5 +18,26 @@ struct UberMapViewRepresentable: UIViewRepresentable {
         mapView.userTrackingMode = .follow
         
         return mapView
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        
+    }
+    
+    func makeCoordinator() -> MapCoordinator {
+        return MapCoordinator(parent: self)
+    }
+}
+
+extension UberMapViewRepresentable {
+     
+    class MapCoordinator: NSObject, MKMapViewDelegate {
+        
+        let parent: UberMapViewRepresentable
+        
+        init(parent: UberMapViewRepresentable) {
+            self.parent = parent
+            super.init()
+        }
     }
 }
