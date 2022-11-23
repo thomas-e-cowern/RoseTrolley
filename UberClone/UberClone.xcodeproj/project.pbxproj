@@ -56,7 +56,6 @@
 				4D1E2E1E292EDB20004801A7 /* Extensions */,
 				4D1E2E1D292EDB1A004801A7 /* Core */,
 				4D1E2E18292EDABC004801A7 /* App */,
-				4D1E2E0A292EDA7A004801A7 /* UberCloneApp.swift */,
 				4D1E2E0E292EDA7D004801A7 /* Assets.xcassets */,
 				4D1E2E10292EDA7D004801A7 /* Preview Content */,
 			);
@@ -74,6 +73,7 @@
 		4D1E2E18292EDABC004801A7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4D1E2E0A292EDA7A004801A7 /* UberCloneApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
