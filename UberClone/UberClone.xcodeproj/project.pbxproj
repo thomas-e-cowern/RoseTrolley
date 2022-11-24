@@ -85,7 +85,8 @@
 		4D1E2E1D292EDB1A004801A7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4D1E2E22292EDB6A004801A7 /* Views */,
+				4D1E2E2A292EEC7A004801A7 /* LocationSearch */,
+				4D1E2E29292EEC55004801A7 /* Home */,
 				4D1E2E21292EDB60004801A7 /* ViewModels */,
 			);
 			path = Core;
@@ -127,6 +128,21 @@
 				4D1E2E25292EDC0C004801A7 /* UberMapViewRepresentable.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4D1E2E29292EEC55004801A7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4D1E2E22292EDB6A004801A7 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4D1E2E2A292EEC7A004801A7 /* LocationSearch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocationSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
