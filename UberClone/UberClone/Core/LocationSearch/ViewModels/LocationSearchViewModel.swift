@@ -31,6 +31,7 @@ class LocationSearchViewModel: NSObject, ObservableObject {
     // MARK: - Helpers
     func selectLocation(_ location: String) {
         self.selectedLocation = location
+        print("DEBUG: Selected location: \(String(describing: selectedLocation))")
     }
     
 }
