@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct LocationSearchView: View {
+    
+    @State private var startLocationText: String = ""
+    @State private var destinationLocationText: String = ''
+    
     var body: some View {
         VStack {
             HStack {
@@ -24,6 +28,10 @@ struct LocationSearchView: View {
                         .fill(.black)
                         .frame(width: 6, height: 6)
                 }
+            }
+            
+            VStack {
+                 
             }
         }
     }
