@@ -42,11 +42,15 @@ struct LocationSearchView: View {
                 }
             }
             .padding(.horizontal)
+            .padding(.top, 64)
+            
+            Divider()
+                .padding(.vertical)
             
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(0..<20, id:\.self) { _ in
-                        
+                        LocationSearchResultsCell()
                     }
                 }
             }
