@@ -50,7 +50,7 @@ struct LocationSearchView: View {
             
             ScrollView {
                 VStack(alignment: .leading) {
-                    ForEach(0..<20, id:\.self) { _ in
+                    ForEach(viewModel.results, id:\.self) { result in
                         LocationSearchResultsCell()
                     }
                 }
