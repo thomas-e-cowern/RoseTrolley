@@ -15,6 +15,7 @@
 		4D1E2E28292EDE8F004801A7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E2E27292EDE8F004801A7 /* LocationManager.swift */; };
 		4D1E2E2E292EECE4004801A7 /* LocationSearchActivtionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E2E2D292EECE4004801A7 /* LocationSearchActivtionView.swift */; };
 		4D1E2E30292EEED1004801A7 /* MapViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E2E2F292EEED1004801A7 /* MapViewActionButton.swift */; };
+		4D1E2E3229315232004801A7 /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E2E3129315232004801A7 /* LocationSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4D1E2E27292EDE8F004801A7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4D1E2E2D292EECE4004801A7 /* LocationSearchActivtionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivtionView.swift; sourceTree = "<group>"; };
 		4D1E2E2F292EEED1004801A7 /* MapViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewActionButton.swift; sourceTree = "<group>"; };
+		4D1E2E3129315232004801A7 /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				4D1E2E2D292EECE4004801A7 /* LocationSearchActivtionView.swift */,
+				4D1E2E3129315232004801A7 /* LocationSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1E2E3229315232004801A7 /* LocationSearchView.swift in Sources */,
 				4D1E2E28292EDE8F004801A7 /* LocationManager.swift in Sources */,
 				4D1E2E30292EEED1004801A7 /* MapViewActionButton.swift in Sources */,
 				4D1E2E0B292EDA7A004801A7 /* UberCloneApp.swift in Sources */,
