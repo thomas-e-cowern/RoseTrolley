@@ -32,13 +32,22 @@ struct LocationSearchView: View {
                 VStack {
                      TextField("Current Location", text: $startLocationText)
                         .frame(height: 32)
-                        .backgroundStyle(Color(.systemGroupedBackground))
+                        .background(Color(.systemGroupedBackground))
                         .padding(.trailing)
                     
                     TextField("Where To?", text: $destinationLocationText)
                        .frame(height: 32)
-                       .backgroundStyle(Color(.systemGray4))
+                       .background(Color(.systemGray4))
                        .padding(.trailing)
+                }
+            }
+            .padding(.horizontal)
+            
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ForEach(0..<20, id:\.self) { _ in
+                        
+                    }
                 }
             }
         }
