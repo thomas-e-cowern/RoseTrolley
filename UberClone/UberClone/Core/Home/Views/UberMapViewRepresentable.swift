@@ -26,13 +26,22 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
         print("DEBUG: mapState: \(mapState)")
-        if let coordinate = locationViewModel.selectedLocationCoordinate {
-            context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
-            context.coordinator.configurePolyline(wtihDestinationCoordinate: coordinate)
-        }
         
-        if mapState == .noInput {
+        switch mapState {
+        case .noInput:
             context.coordinator.clearMapViewAndRecenter()
+            break
+        case .locationSelected:
+            if let coordinate = locationViewModel.selectedLocationCoordinate {
+                context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
+                context.coordinator.configurePolyline(wtihDestinationCoordinate: coordinate)
+            }
+            
+            if mapState == .noInput {
+                context.coordinator.clearMapViewAndRecenter()
+            }
+        case .searchingForLocation:
+            break
         }
     }
     
