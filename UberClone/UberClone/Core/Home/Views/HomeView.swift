@@ -18,18 +18,18 @@ struct HomeView: View {
                 .foregroundColor(.pink)
             
             if mapState == .noInput {
-                LocationSearchView(showLocationSearchView: $showLocationSearchView)
+                LocationSearchView(mapState: $mapState)
             } else if mapState == .searchingForLocation{
                 LocationSearchActivtionView()
                     .padding(.top, 72)
                     .onTapGesture {
                         withAnimation(.spring()) {
-                            showLocationSearchView.toggle()
+                            mapState = .searchingForLocation
                         }
                 }
             }
             
-            MapViewActionButton(showLocationSearchView: $showLocationSearchView)
+            MapViewActionButton(mapState: $mapState)
                 .padding(.leading)
                 .padding(.top, 4)
         }
