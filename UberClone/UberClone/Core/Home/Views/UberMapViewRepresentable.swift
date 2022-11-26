@@ -36,10 +36,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
                 context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
                 context.coordinator.configurePolyline(wtihDestinationCoordinate: coordinate)
             }
-            
-            if mapState == .noInput {
-                context.coordinator.clearMapViewAndRecenter()
-            }
+            break
         case .searchingForLocation:
             break
         }
