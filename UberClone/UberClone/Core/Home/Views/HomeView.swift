@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var showLocationSearchView: Bool = false
+    @State private var mapState = MapViewState.noInput
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -17,7 +18,7 @@ struct HomeView: View {
                 .ignoresSafeArea()
                 .foregroundColor(.pink)
             
-            if showLocationSearchView {
+            if mapState = .noInput {
                 LocationSearchView(showLocationSearchView: $showLocationSearchView)
             } else {
                 LocationSearchActivtionView()
