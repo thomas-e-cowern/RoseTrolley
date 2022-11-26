@@ -51,9 +51,9 @@ struct LocationSearchView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(viewModel.results, id:\.self) { result in
-                        LocationSearchResultsCell(title: result.title, subtitle: result.subtitle)
+                        LocationSearchResultsCell(title: result, subtitle: result.subtitle)
                             .onTapGesture {
-                                viewModel.selectLocation(result.title)
+                                viewModel.selectLocation(result)
                                 showLocationSearchView.toggle()
                             }
                     }

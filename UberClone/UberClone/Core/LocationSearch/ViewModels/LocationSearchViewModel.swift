@@ -29,11 +29,25 @@ class LocationSearchViewModel: NSObject, ObservableObject {
     }
     
     // MARK: - Helpers
-    func selectLocation(_ location: String) {
-        self.selectedLocation = location
-        print("DEBUG: Selected location: \(String(describing: selectedLocation))")
+    func selectLocation(_ localSearch: MKLocalSearchCompletion) {
+        
+        locationSearch(forLocalSearchCompletion: localSearch) { response, error in
+            guard let item = response?.mapItems.first else { return }
+            let coordinate = item.placemark.coordinate
+            
+            print("DEBUG: location coordinates: \(coordinate)")
+        }
+        
+//        self.selectedLocation = location
+//        print("DEBUG: Selected location: \(String(describing: selectedLocation))")
     }
     
+    func locationSearch(forLocalSearchCompletion localSearch: MKLocalSearchCompletion, completion: @escaping MKLocalSearch.CompletionHandler) {
+        let searchRequest = MKLocalSearch.Request()
+        searchRequest.naturalLanguageQuery = localSearch.title.appending(localSearch.title)
+        let search = MKLocalSearch(request: searchRequest)
+        search.start(completionHandler: completion)
+    }
 }
 
 // MARK: - MKLocalSearchCompleterDelegate
