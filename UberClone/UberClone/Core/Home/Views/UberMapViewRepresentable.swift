@@ -31,7 +31,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
             context.coordinator.configurePolyline(wtihDestinationCoordinate: coordinate)
         }
         
-        if mapState == .locationSelected {
+        if mapState == .noInput {
             context.coordinator.clearMapViewAndRecenter()
         }
     }
