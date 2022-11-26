@@ -17,9 +17,9 @@ struct HomeView: View {
                 .ignoresSafeArea()
                 .foregroundColor(.pink)
             
-            if mapState == .noInput {
+            if mapState == .searchingForLocation {
                 LocationSearchView(mapState: $mapState)
-            } else if mapState == .searchingForLocation{
+            } else if mapState == .noInput {
                 LocationSearchActivtionView()
                     .padding(.top, 72)
                     .onTapGesture {
