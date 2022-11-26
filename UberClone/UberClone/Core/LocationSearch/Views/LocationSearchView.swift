@@ -67,5 +67,6 @@ struct LocationSearchView: View {
 struct LocationSearchView_Previews: PreviewProvider {
     static var previews: some View {
         LocationSearchView(showLocationSearchView: .constant(false))
+            .environmentObject(LocationSearchViewModel())
     }
 }
