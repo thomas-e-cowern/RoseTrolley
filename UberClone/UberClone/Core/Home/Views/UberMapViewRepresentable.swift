@@ -124,7 +124,7 @@ extension UberMapViewRepresentable {
         func clearMapViewAndRecenter() {
             print("DEBUG: Cleared")
             parent.mapView.removeAnnotations(parent.mapView.annotations)
-            parent.mapView.removeOverlays(parent.mapView.overlays)
+            self.parent.mapView.removeOverlays(parent.mapView.overlays)
             
             if let region = currentRegion {
                 parent.mapView.setRegion(region, animated: true)
