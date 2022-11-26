@@ -31,13 +31,13 @@ struct UberMapViewRepresentable: UIViewRepresentable {
         case .noInput:
             context.coordinator.clearMapViewAndRecenter()
             break
+        case .searchingForLocation:
+            break
         case .locationSelected:
             if let coordinate = locationViewModel.selectedLocationCoordinate {
                 context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
                 context.coordinator.configurePolyline(wtihDestinationCoordinate: coordinate)
             }
-            break
-        case .searchingForLocation:
             break
         }
     }
@@ -122,6 +122,7 @@ extension UberMapViewRepresentable {
         }
         
         func clearMapViewAndRecenter() {
+            print("DEBUG: Cleared")
             parent.mapView.removeAnnotations(parent.mapView.annotations)
             parent.mapView.removeOverlays(parent.mapView.overlays)
             
