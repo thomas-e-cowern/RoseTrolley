@@ -19,6 +19,7 @@
 		4D1E2E3429315540004801A7 /* LocationSearchResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E2E3329315540004801A7 /* LocationSearchResultsCell.swift */; };
 		4D1E2E3629315C21004801A7 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E2E3529315C21004801A7 /* LocationSearchViewModel.swift */; };
 		4D1E2E3829329683004801A7 /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E2E3729329683004801A7 /* MapViewState.swift */; };
+		4D82DD5729381ED600F1F7BA /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D82DD5629381ED600F1F7BA /* RideRequestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4D1E2E3329315540004801A7 /* LocationSearchResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultsCell.swift; sourceTree = "<group>"; };
 		4D1E2E3529315C21004801A7 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
 		4D1E2E3729329683004801A7 /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
+		4D82DD5629381ED600F1F7BA /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		4D1E2E1D292EDB1A004801A7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4D82DD5529381EC300F1F7BA /* Trips */,
 				4D1E2E2A292EEC7A004801A7 /* LocationSearch */,
 				4D1E2E29292EEC55004801A7 /* Home */,
 				4D1E2E21292EDB60004801A7 /* ViewModels */,
@@ -179,6 +182,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4D82DD5529381EC300F1F7BA /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				4D82DD5629381ED600F1F7BA /* RideRequestView.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +263,7 @@
 				4D1E2E3629315C21004801A7 /* LocationSearchViewModel.swift in Sources */,
 				4D1E2E3229315232004801A7 /* LocationSearchView.swift in Sources */,
 				4D1E2E28292EDE8F004801A7 /* LocationManager.swift in Sources */,
+				4D82DD5729381ED600F1F7BA /* RideRequestView.swift in Sources */,
 				4D1E2E3829329683004801A7 /* MapViewState.swift in Sources */,
 				4D1E2E30292EEED1004801A7 /* MapViewActionButton.swift in Sources */,
 				4D1E2E3429315540004801A7 /* LocationSearchResultsCell.swift in Sources */,
