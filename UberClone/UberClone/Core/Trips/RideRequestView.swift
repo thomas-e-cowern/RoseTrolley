@@ -59,7 +59,25 @@ struct RideRequestView: View {
             }
             .padding()
             
+            Divider()
+            
             // ridy type selection view
+            Text("Suggested Rides")
+                .font(.subheadline)
+                .fontWeight(.semibold)
+                .padding()
+                .foregroundColor(.gray)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            ScrollView(.horizontal) {
+                HStack(spacing: 12) {
+                    ForEach(0..<3, id: \.self) { _ in
+                        VStack(alignment: .leading) {
+                            Image("uber-x")
+                        }
+                    }
+                }
+            }
             
             // payment option view
             
