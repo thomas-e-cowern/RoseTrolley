@@ -33,7 +33,7 @@ struct RideRequestView: View {
                 VStack {
                     HStack {
                         Text("Current Location")
-                            .font(.system(size: 16))
+                            .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.gray)
                         
                         Spacer()
@@ -46,8 +46,7 @@ struct RideRequestView: View {
                     
                     HStack {
                         Text("Starbucks")
-                            .font(.system(size: 16))
-                            .foregroundColor(.gray)
+                            .font(.system(size: 16, weight: .semibold))
                         
                         Spacer()
                         
@@ -55,9 +54,10 @@ struct RideRequestView: View {
                             .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(.gray)
                     }
-                    .padding(.bottom, 10)
                 }
+                .padding(.leading, 8)
             }
+            .padding()
             
             // ridy type selection view
             
