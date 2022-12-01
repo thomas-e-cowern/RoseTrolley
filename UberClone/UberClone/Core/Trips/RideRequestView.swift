@@ -13,6 +13,7 @@ struct RideRequestView: View {
             Capsule()
                 .foregroundColor(Color(.systemGray))
                 .frame(width: 48, height: 6)
+                .padding(.top, 10)
             
             // trip info view
             HStack {
@@ -133,10 +134,12 @@ struct RideRequestView: View {
                     .background(.blue)
                     .cornerRadius(10)
                     .foregroundColor(.white)
+                    .padding(.bottom, 8)
             }
 
         }
         .background(.white)
+        .cornerRadius(12)
     }
 }
 
