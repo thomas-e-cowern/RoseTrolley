@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RideRequestView: View {
+    
+    @State private var selectedRideType: RideType = .uberX
+    
     var body: some View {
         VStack {
             Capsule()
@@ -72,26 +75,31 @@ struct RideRequestView: View {
             
             ScrollView(.horizontal) {
                 HStack(spacing: 12) {
-                    ForEach(0..<3, id: \.self) { _ in
+                    ForEach(RideType.allCases, id: \.self) { type in
                         VStack(alignment: .leading) {
-                            Image("uber-x")
+                            Image(type.imageName)
                                 .resizable()
                                 .scaledToFit()
                             
-                            VStack (spacing: 4) {
-                                Text("UberX")
+                            VStack (alignment: .center, spacing: 4) {
+                                Text(type.description)
                                     .font(.system(size: 14, weight: .semibold))
-                                    .foregroundColor(.gray)
                                 
                                 Text("$22.40")
                                     .font(.system(size: 14, weight: .semibold))
-                                    .foregroundColor(.gray)
                             }
-                            .padding(8)
+                            .padding()
                         }
                         .frame(width: 112, height: 140)
-                        .background(Color(.systemGroupedBackground))
+                        .foregroundColor(type == selectedRideType ? .white : .black)
+                        .background(Color(type == selectedRideType ? .systemBlue : .systemGroupedBackground))
+                        .scaleEffect(type == selectedRideType ? 1.15 : 1.0)
                         .cornerRadius(10)
+                        .onTapGesture {
+                            withAnimation(.spring()) {
+                                selectedRideType = type
+                            }
+                        }
                     }
                 }
             }
