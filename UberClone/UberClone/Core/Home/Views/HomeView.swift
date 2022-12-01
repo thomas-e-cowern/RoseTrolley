@@ -40,6 +40,7 @@ struct HomeView: View {
                     .transition(.move(edge: .bottom))
             }
         }
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

@@ -136,8 +136,8 @@ struct RideRequestView: View {
                     .foregroundColor(.white)
                     .padding(.bottom, 8)
             }
-
         }
+        .padding(.bottom, 16)
         .background(.white)
         .cornerRadius(12)
     }
