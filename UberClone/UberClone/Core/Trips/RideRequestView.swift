@@ -74,12 +74,30 @@ struct RideRequestView: View {
                     ForEach(0..<3, id: \.self) { _ in
                         VStack(alignment: .leading) {
                             Image("uber-x")
+                                .resizable()
+                                .scaledToFit()
+                            
+                            VStack (spacing: 4) {
+                                Text("UberX")
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .foregroundColor(.gray)
+                                
+                                Text("$22.40")
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .foregroundColor(.gray)
+                            }
+                            .padding(8)
                         }
+                        .frame(width: 112, height: 140)
+                        .background(Color(.systemGroupedBackground))
+                        .cornerRadius(10)
                     }
                 }
             }
+            .padding(.horizontal)
             
             // payment option view
+            
             
             // request ride button
         }
