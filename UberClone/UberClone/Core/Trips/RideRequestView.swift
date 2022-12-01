@@ -96,6 +96,9 @@ struct RideRequestView: View {
             }
             .padding(.horizontal)
             
+            Divider()
+                .padding(.vertical, 8)
+            
             // payment option view
             HStack(spacing: 12) {
                 Text("Visa")
@@ -121,7 +124,19 @@ struct RideRequestView: View {
             .padding(.horizontal)
             
             // request ride button
+            Button {
+                // Send it
+            } label: {
+                Text("Confirm Ride")
+                    .fontWeight(.bold)
+                    .frame(width: UIScreen.main.bounds.width - 32, height: 50)
+                    .background(.blue)
+                    .cornerRadius(10)
+                    .foregroundColor(.white)
+            }
+
         }
+        .background(.white)
     }
 }
 
