@@ -80,8 +80,17 @@ class LocationSearchViewModel: NSObject, ObservableObject {
             }
             
             guard let route = response?.routes.first else { return }
+            self.configurePickupAndDropoffTimes(with: route.expectedTravelTime)
             completion(route)
         }
+    }
+    
+    func configurePickupAndDropoffTimes(with expectedTravelTime: Double) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm a"
+        
+        pickupTime = formatter.string(from: Date())
+        dropoffTime = formatter.string(from: Date() + expectedTravelTime)
     }
 }
 
