@@ -14,6 +14,10 @@ class LocationSearchViewModel: NSObject, ObservableObject {
     // MARK: properties
     @Published var results = [MKLocalSearchCompletion]()
     @Published var selectedUberLocation: UberLocation?
+    @Published var pickupTime: String?
+    @Published var dropoffTime: String?
+    
+    
     private let searchCompleter = MKLocalSearchCompleter()
     var queryFragment: String = "" {
         didSet {
