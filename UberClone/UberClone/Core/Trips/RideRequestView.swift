@@ -50,8 +50,11 @@ struct RideRequestView: View {
                     .padding(.bottom, 10)
                     
                     HStack {
-                        Text("Starbucks")
-                            .font(.system(size: 16, weight: .semibold))
+                        if let location = locationVM.selectedUberLocation {
+                            Text(location.title)
+                                .font(.system(size: 16, weight: .semibold))
+
+                        }
                         
                         Spacer()
                         
