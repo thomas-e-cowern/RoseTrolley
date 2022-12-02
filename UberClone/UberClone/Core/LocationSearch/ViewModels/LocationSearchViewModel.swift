@@ -64,6 +64,25 @@ class LocationSearchViewModel: NSObject, ObservableObject {
         let tripDistanceInMeters = userLocation.distance(from: destination)
         return type.computePrice(for: tripDistanceInMeters)
     }
+    
+    func getDestinationRoute(from userLocation: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D, completion: @escaping(MKRoute) -> Void) {
+        let userPlacemark = MKPlacemark(coordinate: userLocation)
+        let destPlacemark = MKPlacemark(coordinate: destination)
+        let request = MKDirections.Request()
+        request.source = MKMapItem(placemark: userPlacemark)
+        request.destination = MKMapItem(placemark: destPlacemark)
+        let directions = MKDirections(request: request)
+        
+        directions.calculate { response, error in
+            if let error = error {
+                print("DEBUG: Failed to get directions: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let route = response?.routes.first else { return }
+            completion(route)
+        }
+    }
 }
 
 // MARK: - MKLocalSearchCompleterDelegate
