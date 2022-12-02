@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var mapState = MapViewState.noInput
+    @EnvironmentObject var locationVM: LocationSearchViewModel
     
     var body: some View {
         ZStack (alignment: .bottom) {
