@@ -99,6 +99,7 @@ extension UberMapViewRepresentable {
             guard let userLocationCoordinante = self.userLocationCoordinante else { return }
             parent.locationViewModel.getDestinationRoute(from: userLocationCoordinante, to: coordinate) { route in
                 self.parent.mapView.addOverlay(route.polyline)
+                self.parent.mapState = .polylineAdded
                 let rect = self.parent.mapView.mapRectThatFits(route.polyline.boundingMapRect, edgePadding: .init(top: 64, left: 32, bottom: 500, right: 32))
                 self.parent.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
             }
